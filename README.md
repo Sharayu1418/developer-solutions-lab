@@ -8,10 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Version](https://img.shields.io/badge/version-v1.0.0-green)
 ![AZ-400](https://img.shields.io/badge/AZ--400-DevOps%20Engineer%20Expert-blue)
-![AWS Cloud](https://img.shields.io/badge/AWS-Cloud%20Developer-green)
-![NPM Version](https://img.shields.io/npm/v/your-package-name-green)
-![Downloads](https://img.shields.io/npm/dt/your-package-name-green)
-![OpenSSF Scorecard](https://img.shields.io/ossf-scorecard/score/dakotab75/microsoft-dev-solutions-green)
+![AWS Cloud](https://img.shields.io/badge/AWS-Cloud%20Developer-blue)
 
 ---
 
