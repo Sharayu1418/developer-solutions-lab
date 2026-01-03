@@ -1,0 +1,14 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "/this/will/be/ignored"
+      ],
+      "defines": [
+        "IGNORED_DEFINE=1"
+      ]
+    }
+  ]
+}

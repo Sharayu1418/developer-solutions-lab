@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/project",
+    "command": "clang++ -I/usr/include -DMY_DEFINE=1 -c main.cpp",
+    "file": "main.cpp"
+  }
+]

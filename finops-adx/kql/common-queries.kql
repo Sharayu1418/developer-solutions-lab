@@ -1,0 +1,22 @@
+```kusto
+Costs
+| take 10
+```
+```kusto
+Costs
+| summarize totalCost = sum(PreTaxCost)
+```
+```kusto
+Costs
+| summarize totalCost = sum(PreTaxCost) by ServiceName
+| order by totalCost desc
+```
+```kusto
+PricingUnits
+| take 10
+```
+```kusto
+Costs
+| where PreTaxCost > 0
+| take 10
+```

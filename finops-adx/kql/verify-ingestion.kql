@@ -1,0 +1,14 @@
+```kusto
+ActualCosts_raw
+| take 10
+```
+
+```kusto
+ActualCosts_raw
+| summarize rows = count()
+```
+
+```kusto
+ActualCosts_raw
+| summarize latest = max(TimeGenerated)
+```
