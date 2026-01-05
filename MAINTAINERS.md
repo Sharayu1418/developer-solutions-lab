@@ -13,7 +13,7 @@ Maintainers are responsible for:
 - Enforcing the Code of Conduct
 - Maintaining issue triage and labels
 
-## Decision Model
+## Decision Process
 
-- The maintainer has final say on merges and scope
-- Consensus is preferred, but not required
+Consensus is preferred when possible.  
+Final decisions rest with the maintainer

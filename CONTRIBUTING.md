@@ -1,56 +1,53 @@
-# Contributing to microsoft-dev-solutions
-Your contributions are valued, and following these guidelines ensures a smooth and professional collaboration.
+# Contributing to Developer Solutions Lab
 
-## Fork the Repository
-To contribute, fork the repository to your GitHub account. This creates your personal copy that you can freely modify.
+Thank you for your interest in contributing.
+
+This is an experimental, community-driven project. Contributions are welcome as long as they are clear, reproducible, and aligned with the project scope.
 
 ## Clone Your Fork
+
+First, fork this repository to your own GitHub account.
+
+Then clone your fork locally:
+
 ```bash
-git clone https://github.com/[your-github-username]/microsoft-dev-solutions.git
+git clone https://github.com/[your-github-username]/developer-solutions-lab.git
 ```
-Replace [your-github-username] with your GitHub handle.
 
-## Setup Environment
-Ensure your development environment is fully prepared:
+## Set Up Your Environment
+
+Ensure your development environment is ready before making changes.
+
+Typical requirements may include:
+
 Python 3.8+
-Node.js
-Conda (optional, if using Python environments)
-Azure DevOps access (if required)
-Azure ML workspace access (if applicable)
 
-Validate your setup before making changes.
+Node.js
+
+Conda (optional, for Python environments)
+
+Cloud access if required by the experiment (e.g. Azure or AWS)
+
+Not all projects require all tools. Refer to the specific solution or lab documentation.
 
 ## Create a Branch
-Always create a new branch for your contribution to keep the main branch stable:
 ```bash
 git checkout -b [branch-name]
 ```
+Use a short, descriptive branch name.
 
-## Make Changes & Validate
+## Make Changes and Validate
 ```bash
 npm install
 npm test
 python -m unittest
 ```
-If your changes impact CI/CD pipelines or Azure ML pipelines, ensure those validations pass as well.
+If your contribution affects CI/CD pipelines or cloud experiments, ensure those workflows execute successfully.
 
-## Commit & Push
+## Commit and Push
 ```bash
 git add .
-git commit -m "Message"
+git commit -m "Describe your change"
 git push origin [branch-name]
 ```
-## Open a Pull Request
-Navigate to the main microsoft-dev-solutions repository.
-Click New Pull Request.
-Select your branch, provide a descriptive title and detailed description.
-Submit your PR.
-
-## Review & Merge
-Monitor your PR and address feedback promptly.
-Ensure all tests and builds pass.
-Adhere to the Code of Conduct.
-Only the maintainer DakotaB75 approves merges into the main/aws-labs branch.
-
-## Contributor License Agreement
-By contributing, you agree that your contributions are licensed under MIT No Attribution. This ensures the project remains free, open, and safe.
+Then open a pull request from your fork to the main repository.

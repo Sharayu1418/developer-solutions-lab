@@ -1,6 +1,6 @@
-![Microsoft Dev Solutions](diagrams/microsoft-dev-solutions-banner.png)
+![Microsoft Dev Solutions](diagrams/banner.png)
 
-## Open Source at Microsoft Experimental Lab
+## Open Source Developer Solutions Lab
 
 ![CI](https://github.com/DakotaB75/AZ-400-ci-cd-github-actions-azure/actions/workflows/ci.yml/badge.svg)
 ![CD Prod](https://github.com/DakotaB75/AZ-400-ci-cd-github-actions-azure/actions/workflows/cd-production.yml/badge.svg)
@@ -12,55 +12,62 @@
 
 ---
 
-## Get Involved
+> Independent personal project by DakotaB75.  
+> Not affiliated with, endorsed by, or maintained by Microsoft or any other company.
 
-This repository is a **living lab for developers, maintainers, and experimenters**.  
-We solve real issues, provide reproducible solutions, and enable cloud experimentation in **Azure ML, AWS, and local environments**.
+This repository is an experimental lab focused on **reproducible developer solutions**.  
+It documents real technical problems and validated approaches across **CI/CD, cloud infrastructure, and tooling**.
 
-If you want to contribute:
-
-- Explore issues labeled **good first issue** for beginner-friendly opportunities.  
-- Submit solutions via **pull requests**, adhering to the maintainer checklist.  
-- Open issues for discussion or clarification **do not email** individual contributors directly.  
-
-> All contributions are evaluated for reproducibility, clarity, and traceability.
+The goal is learning through practice: understand *why* issues happen, *how* to reproduce them, and *how* to resolve them responsibly.
 
 ---
 
-## Featured Projects
+## Scope
 
-- **CI/CD Pipelines** using GitHub Actions, Docker, and Azure (see `/solutions/ci-cd`).  
-- **Cloud Labs** on Azure ML and AWS experimental environments (see `/aws-labs` and `/azure-labs`).  
-- **Sample Applications** for learning and testing (`/app/sample-app`).  
+This project may include experiments and examples involving:
+- CI/CD pipelines (GitHub Actions, Docker)
+- Cloud platforms (Azure, AWS)
+- Local development and testing environments
 
----
-
-## Apply for Resources
-
-- **Azure credits** are available for open source experimentation.  
-- Leverage cloud environments safely with reproducible examples provided.  
+All content is provided for **educational and experimental purposes**.
 
 ---
 
-## Community & Governance
+## Getting Involved
 
-- **Microsoft Open Source Code of Conduct** applies: see [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/).  
-- Issues and PRs are the main channel for discussion maintainers will guide contributions.  
-- All solutions include **traceability, verification, and explicit limitations**.  
+Contributions are welcome and evaluated based on:
+- Reproducibility
+- Technical clarity
+- Explicit assumptions and limitations
+
+How to contribute:
+- Check issues labeled **good first issue**
+- Submit pull requests with clear descriptions
+- Use issues for discussion and questions
+
+> Please use GitHub issues and pull requests as the primary communication channels.
 
 ---
 
-## About the Maintainer
+## Project Structure
 
-This repository is maintained by **DakotaB75**, acting as **de facto maintainer**.  
-Our goal: turn experimental solutions into **trusted references**, with clear explanations of why issues occur and how to reproduce and resolve them.  
-
-> For questions regarding this repository, open an issue or PR. No direct email inquiries are accepted.
+- `solutions/` – Documented technical solutions and experiments  
+- `aws-labs/` – AWS-focused experiments  
+- `azure-labs/` – Azure-focused experiments  
+- `apps/` – Sample applications used for testing and validation  
 
 ---
 
-## Licensing
+## Maintainer
 
-- **MIT No Attribution**  
-- Copyright DakotaB75/microsoft-dev-solutions  
-- Contributors must agree to the CLA before PR merges.
+Maintained by **DakotaB75** as an independent open-source contributor.
+
+This is a personal learning and experimentation project.  
+There is no official support, SLA, or guaranteed stability.
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.

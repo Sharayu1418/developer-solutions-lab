@@ -1,25 +1,15 @@
-# Security Policy for microsoft-dev-solutions
+# Security Policy
 
 ## Reporting a Vulnerability
-If you discover a security vulnerability, do **not** open a public issue. Please report it privately to the maintainer:
 
-**Email:** dakota.amazonwebservices@gmail.com
+If you discover a security vulnerability, please do not open a public issue.
 
-Include:
+Instead, report it using GitHub Security Advisories or contact the maintainer through GitHub.
 
-- A description of the issue
-- Steps to reproduce
-- Impact assessment
-- Any suggested mitigation
+## Scope
 
-## Supported Versions
-This security policy applies to all versions of microsoft-dev-solutions that are publicly released on GitHub.
+This project is experimental. Security fixes are handled on a best-effort basis.
 
-## Response
-The maintainer will acknowledge receipt within 48 hours. Critical vulnerabilities will be prioritized, and fixes will be released as soon as possible.
+## Disclosure
 
-## Public Disclosure
-No vulnerabilities should be publicly disclosed until a fix is available or the maintainer approves disclosure. This ensures users are protected.
-
-## License
-All code in this repository is MIT No Attribution. The maintainer is not liable for issues arising from the use of the software, including security incidents.
+Please do not publicly disclose vulnerabilities until they have been reviewed.
