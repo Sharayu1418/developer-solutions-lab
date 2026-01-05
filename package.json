@@ -1,24 +1,31 @@
 {
-  "name": "microsoft-dev-solutions",
+  "name": "developer-solutions-lab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Experimental developer solutions and reproducible technical labs",
   "main": "index.js",
   "directories": {
     "doc": "docs",
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests defined for this package\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DakotaB75/microsoft-dev-solutions.git"
+    "url": "git+https://github.com/DakotaB75/developer-solutions-lab.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "open-source",
+    "devops",
+    "ci-cd",
+    "cloud",
+    "experiments"
+  ],
+  "author": "Dakota Bazan",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DakotaB75/microsoft-dev-solutions/issues"
+    "url": "https://github.com/DakotaB75/developer-solutions-lab/issues"
   },
-  "homepage": "https://github.com/DakotaB75/microsoft-dev-solutions#readme"
+  "homepage": "https://github.com/DakotaB75/developer-solutions-lab#readme",
+  "private": true
 }

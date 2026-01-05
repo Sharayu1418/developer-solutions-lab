@@ -1,4 +1,4 @@
-![Microsoft Dev Solutions](diagrams/banner.png)
+![Banner Dev Solutions](diagrams/banner.png)
 
 ## Open Source Developer Solutions Lab
 

@@ -1,5 +1,5 @@
 name: Solution request / Technical issue
-description: Propose a reproducible issue or solution for microsoft-dev-solutions
+description: Propose a reproducible issue or solution for developer-solutions-lab
 title: "[solution] <short, specific description>"
 labels: ["solution-request"]
 assignees:
@@ -9,8 +9,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        This repository accepts **reproducible, real-world issues only**.
-        Incomplete or non-reproducible requests may be closed.
+        This repository focuses on **reproducible, real-world technical issues**.
+        Requests without clear reproduction steps may be closed.
 
   - type: dropdown
     attributes:
@@ -68,7 +68,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Why this happens (your hypothesis)
+      label: Why this happens (hypothesis)
       description: Optional but encouraged. Share your technical reasoning.
     validations:
       required: false
@@ -76,7 +76,7 @@ body:
   - type: textarea
     attributes:
       label: Reproduction steps
-      description: Commands, configs, queries. No screenshots only.
+      description: Commands, configs, or queries. Avoid screenshots-only reports.
       placeholder: |
         1. Run command X
         2. Configure Y
@@ -92,5 +92,5 @@ body:
           required: true
         - label: I verified this is not documented as by-design
           required: true
-        - label: I checked existing issues and discussions
+        - label: I searched existing issues and discussions
           required: true

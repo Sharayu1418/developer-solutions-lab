@@ -1,47 +1,61 @@
 ## What problem this solves
-GPU appears available in WSL (`nvidia-smi` works), but applications
-(PyTorch, TensorFlow, Docker, CUDA apps) fail to detect or use it.
+
+When using `compile_commands.json`, the VS Code C/C++ extension ignores
+`includePath` and `defines` from `c_cpp_properties.json`.
+This behavior is often unexpected for users.
+
+---
 
 ## Why this happens (by design)
-WSL GPU support is **paravirtualized**.
 
-- Windows owns the GPU
-- WSL exposes it via **dxgkrnl**
-- CUDA / DirectML work only if:
-  - Windows driver supports WSL
-  - Linux userland matches expected versions
+The C/C++ extension treats `compile_commands.json` as the **single source
+of truth** for compilation flags.
 
-This is **not a full Linux GPU stack**.
+Once present:
+- `includePath` is ignored
+- `defines` are ignored
+- All flags must come from the compilation database
 
-## Expected behavior
-- `nvidia-smi` works in WSL
-- GPU visible in `/dev/dxg`
-- CUDA works only with compatible drivers + runtime
+This design ensures **compiler-accurate IntelliSense**.
+
+---
+
+## What “working” means
+
+- IntelliSense matches the actual build
+- Includes and macros resolve from `compile_commands.json`
+- No conflicting configuration sources
+
+---
 
 ## What this does NOT solve
-- Unsupported GPUs
-- Old Windows builds
-- CUDA version mismatches
-- Docker GPU passthrough issues
 
-## When this breaks
-- Windows driver update mismatch
-- WSL kernel outdated
-- CUDA runtime newer than driver
+- Missing flags in the build system
+- Incorrect compiler invocation
+- Incomplete or invalid `compile_commands.json`
 
-## How to verify
+---
 
-### 1. Verify GPU exposure
-```bash
-./verify/verify-gpu.sh
-```
+## Common failure scenarios
 
-## Related issues
-- microsoft/WSL#5955
-- microsoft/WSL#9231
-- nvidia/nvidia-docker#1458
+- The compilation database is incomplete
+- Cross-compilers do not emit required defines
+- Generated commands differ from actual build flags
 
-## Maintenance status
-Validated (Windows 11 + WSL2)
+---
 
-If this helps, feel free to open an issue or PR.
+## References
+
+- Public issue: microsoft/vscode-cpptools#6909  
+- Related discussion: microsoft/vscode-cpptools#7579 (2021–2025)
+
+---
+
+## Validation status
+
+Manually validated against documented behavior.
+
+---
+
+If this documentation is useful, feel free to open an issue or pull request
+to improve clarity or add edge cases.
