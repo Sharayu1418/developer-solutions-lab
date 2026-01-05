@@ -11,10 +11,6 @@
 ![AWS Cloud](https://img.shields.io/badge/AWS-Cloud%20Developer-blue)
 
 ---
-
-> Independent personal project by DakotaB75.  
-> Not affiliated with, endorsed by, or maintained by Microsoft or any other company.
-
 This repository is an experimental lab focused on **reproducible developer solutions**.  
 It documents real technical problems and validated approaches across **CI/CD, cloud infrastructure, and tooling**.
 

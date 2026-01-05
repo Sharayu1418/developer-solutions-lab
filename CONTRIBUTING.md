@@ -20,13 +20,13 @@ Ensure your development environment is ready before making changes.
 
 Typical requirements may include:
 
-Python 3.8+
+- Python 3.8+
 
-Node.js
+- Node.js
 
-Conda (optional, for Python environments)
+- Conda (optional, for Python environments)
 
-Cloud access if required by the experiment (e.g. Azure or AWS)
+- Cloud access if required by the experiment (e.g. Azure or AWS)
 
 Not all projects require all tools. Refer to the specific solution or lab documentation.
 
