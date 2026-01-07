@@ -1,5 +1,4 @@
-![Banner Dev Solutions](diagrams/banner.png)
-
+![Banner Dev Solutions](diagrams/azure_banner.png)
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-4B4B4B?style=flat&logo=python)
@@ -89,10 +88,7 @@ g++ filesystem_watcher.cpp -std=c++17 -o watcher
 ---
 Notes
 
-CUDA examples require GPU-enabled Azure VMs.
-
-Authentication uses DefaultAzureCredential.
-
-Keyboard shortcuts in Visual Studio Code should reference command IDs, e.g. kb(workbench.action.showCommands).
-
-Include Fixes #<number> in PRs for traceability.
+- CUDA examples require GPU-enabled Azure VMs.
+- Authentication uses DefaultAzureCredential.
+- Keyboard shortcuts in Visual Studio Code should reference command IDs, e.g. kb(workbench.action.showCommands).
+- Include Fixes #<number> in PRs for traceability.
