@@ -66,4 +66,4 @@ There is no official support, SLA, or guaranteed stability.
 ## License
 
 This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
+See the LICENSE file for details.
