@@ -1,69 +1,98 @@
 ![Banner Dev Solutions](diagrams/banner.png)
 
-![CI](https://github.com/DakotaB75/AZ-400-ci-cd-github-actions-azure/actions/workflows/ci.yml/badge.svg)
-![CD Prod](https://github.com/DakotaB75/AZ-400-ci-cd-github-actions-azure/actions/workflows/cd-production.yml/badge.svg)
-![CodeQL](https://github.com/DakotaB75/AZ-400-ci-cd-github-actions-azure/actions/workflows/security-codeql.yml/badge.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Version](https://img.shields.io/badge/version-v1.0.0-green)
-![AZ-400](https://img.shields.io/badge/AZ--400-DevOps%20Engineer%20Expert-blue)
-![AWS Cloud](https://img.shields.io/badge/AWS-Cloud%20Developer-blue)
 
----
-## Open Source Developer Solutions Lab
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Python](https://img.shields.io/badge/Python-4B4B4B?style=flat&logo=python)
+![C++](https://img.shields.io/badge/C%2B%2B-4B4B4B?style=flat&logo=cplusplus)
+![C#](https://img.shields.io/badge/C%23-4B4B4B?style=flat&logo=csharp)
+![CUDA](https://img.shields.io/badge/CUDA-4B4B4B?style=flat&logo=nvidia)
+![Status](https://img.shields.io/badge/status-experimental-6E6E6E)
 
-This repository is an experimental lab focused on **reproducible developer solutions**.  
-It documents real technical problems and validated approaches across **CI/CD, cloud infrastructure, and tooling**.
+## Azure Labs
 
-The goal is learning through practice: understand *why* issues happen, *how* to reproduce them, and *how* to resolve them responsibly.
+Focused on **environment validation**, **resource visibility**, and **latency diagnostics** using Python, C#, C++, and CUDA.
 
 ---
 
-## Scope
+## Lab Structure
 
-This project may include experiments and examples involving:
-- CI/CD pipelines (GitHub Actions, Docker)
-- Cloud platforms (Azure, AWS)
-- Local development and testing environments
+```text
+azure-labs/
+ ├─ README.md
+ ├─ env/
+ │  ├─ requirements.txt
+ │  ├─ environment.yml
+ │  └─ Dockerfile
+ ├─ python/
+ │  ├─ adx/
+ │  │  └─ query_latency_test.py
+ │  └─ ml/
+ │     └─ azureml_env_check.py
+ ├─ cpp/
+ │  └─ filesystem_watcher.cpp
+ ├─ csharp/
+ │  └─ AzureResourceProbe.cs
+ └─ cuda/
+    └─ gpu_driver_check.cu
+```
+## Environment Preparation
 
-All content is provided for **educational and experimental purposes**.
+Authenticate with Azure:
 
+- Use Azure CLI or Visual Studio Code account sign-in.
+
+- Verify with az account show.
+
+CUDA samples require:
+- NVIDIA GPU
+- CUDA Toolkit installed and on `PATH`
+CUDA components are optional and not required to run the core Azure labs.
+
+Set required variables:
+
+- AZURE_SUBSCRIPTION_ID
+
+Install Python dependencies:
+
+```text
+pip install -r env/requirements.txt
+```
+Conda Setup
+
+```text
+conda env create -f env/environment.yml
+conda activate azure-labs
+```
+## Run Diagnostics
+Azure Resource Access (Python)
+
+```text
+python python/ml/azureml_env_check.py
+```
+
+Azure Data Explorer (ADX) Latency
+
+```text
+python python/adx/query_latency_test.py
+```
+
+Azure Resource Enumeration (C#)
+```text
+dotnet run --project csharp/AzureResourceProbe.c
+```
+
+Filesystem Monitoring (C++)
+```text
+g++ filesystem_watcher.cpp -std=c++17 -o watcher
+./watcher
+```
 ---
+Notes
 
-## Getting Involved
+CUDA examples require GPU-enabled Azure VMs.
 
-Contributions are welcome and evaluated based on:
-- Reproducibility
-- Technical clarity
-- Explicit assumptions and limitations
+Authentication uses DefaultAzureCredential.
 
-How to contribute:
-- Check issues labeled **good first issue**
-- Submit pull requests with clear descriptions
-- Use issues for discussion and questions
+Keyboard shortcuts in Visual Studio Code should reference command IDs, e.g. kb(workbench.action.showCommands).
 
-> Please use GitHub issues and pull requests as the primary communication channels.
-
----
-
-## Project Structure
-
-- `solutions/` – Documented technical solutions and experiments  
-- `aws-labs/` – AWS-focused experiments  
-- `azure-labs/` – Azure-focused experiments  
-- `apps/` – Sample applications used for testing and validation  
-
----
-
-## Maintainer
-
-Maintained by **DakotaB75** as an independent open-source contributor.
-
-This is a personal learning and experimentation project.  
-There is no official support, SLA, or guaranteed stability.
-
----
-
-## License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
+Include Fixes #<number> in PRs for traceability.
